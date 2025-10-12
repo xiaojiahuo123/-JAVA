@@ -124,9 +124,9 @@ static void sort(int[] a, int parallelism, int low, int high) {
         Arrays.sort(arr);
         //在Arrays.sort方法内部，它调用了元素的compareTo方法来比较两个元素对象的大小
         //在这个方法内部，会有一个操作 将arr[i]转型为Comparable接口类型，然后调用compareTo方法
-
+        System.out.println("1");
         System.out.println(Arrays.toString(arr));
-
+        System.out.println("1");
         //按照成绩排序
         //需要定制比较规则，找Comparator接口，用这个接口的compare方法
         Comparator c = new Comparator() {
@@ -195,6 +195,18 @@ static void sort(int[] a, int parallelism, int low, int high) {
                 Student s1 = (Student) o1;
                 Student s2 = (Student) o2;
                 Collator collator = Collator.getInstance(Locale.CHINA);
+                //Locale.CHINA  这是将语言环境设置为中文环境的意思，用于中文的字符串比较
+//Collator类执行区域设置敏感String比较。 您使用此类来构建自然语言文本的搜索和排序例程
+                /*
+ 以下示例显示如何使用默认语言环境的Collator比较两个字符串。
+
+ // Compare two strings in the default locale
+ Collator myCollator = Collator.getInstance();
+ if( myCollator.compare("abc", "ABC") < 0 )
+     System.out.println("abc is less than ABC");
+ else
+     System.out.println("abc is greater than or equal to ABC");
+ */
                 return collator.compare(s1.getName(), s2.getName());
 
             }
