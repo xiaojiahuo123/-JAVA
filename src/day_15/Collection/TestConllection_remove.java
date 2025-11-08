@@ -1,8 +1,7 @@
-package day_15;
+package day_15.Collection;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.LinkedList;
 import java.util.function.Predicate;
 
 public class TestConllection_remove {

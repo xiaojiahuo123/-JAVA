@@ -1,4 +1,4 @@
-package day_15;
+package day_15.Collection;
 
 import org.junit.Test;
 
