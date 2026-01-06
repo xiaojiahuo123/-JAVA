@@ -18,8 +18,8 @@ public class TestList4 { //List集合的查操作演示
 
         String a = arrayList1.get(1);
         System.out.println(a);
-        String b = arrayList1.getFirst();
-        System.out.println(b);
+        //String b = arrayList1.getFirst();
+        //System.out.println(b);
         List<String> sub  = arrayList1.subList(1,3);
         System.out.println(sub);
     }
