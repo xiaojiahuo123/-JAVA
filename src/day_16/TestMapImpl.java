@@ -11,7 +11,7 @@ public class TestMapImpl {//
     public void test1(){
         long start = System.currentTimeMillis();
         ArrayList<Integer> list = new ArrayList<>();
-        list.add(1);//这里先添加1个，保证list.size()不为0
+        list.add(Integer.valueOf(1));//这里先添加1个，保证list.size()不为0
         Random random = new Random();
         for(int i=1; i<=10000; i++){
             int index = random.nextInt(0, list.size());
@@ -25,7 +25,7 @@ public class TestMapImpl {//
     public void test2(){
         long start = System.currentTimeMillis();
         LinkedList<Integer> list = new LinkedList<>();
-        list.add(1);//这里先添加1个，保证list.size()不为0
+        list.add(Integer.valueOf(1));//这里先添加1个，保证list.size()不为0
         Random random = new Random();
         for(int i=1; i<=10000; i++){
             int index = random.nextInt(0, list.size());

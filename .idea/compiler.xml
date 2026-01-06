@@ -10,8 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="day02_teacher_code" target="25" />
-      <module name="mian" target="25" />
+      <module name="mian" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
