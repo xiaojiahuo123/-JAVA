@@ -1,6 +1,5 @@
 package day_16.Map的增删改查;
 
-<<<<<<< HEAD
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -85,7 +84,4 @@ public class TestMap3 {
         map.replaceAll(bi);
         System.out.println(map);
     }
-=======
-public class TestMap3 {
->>>>>>> f358ddb8e53004e7cb528a895ad633255bd097ca
 }
